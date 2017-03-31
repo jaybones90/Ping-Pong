@@ -1,3 +1,12 @@
+h1 {
+  font-size: 60px;
+}
+hr {
+  width: 400px;
+}
+h2 {
+  font-family: 'Kadwa';
+}
 #startSection {
   display: none;
   text-align: center;
@@ -5,11 +14,20 @@
 #displayAnswerSection {
   display: none;
 }
-h1 {
-  font-size: 60px;
+#displayAnswer {
+  list-style: none;
+  text-align: center;
+  font-family: 'Arvo';
+  text-shadow: 1px 1px 4px darkgrey;
+  font-size: 20px;
 }
-hr {
-  width: 400px;
+#rulesAlign {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Kadwa';
+  margin-bottom: 40px;
+  margin-top: 20px;
 }
 #pingPongButtonLabel {
   font-size: 20px;
@@ -39,9 +57,12 @@ hr {
   background-color: rgba(0, 0, 0, 0.9);
   color: white;
   padding: 10px;
-  box-shadow: 2px 2px 4px red;
+  box-shadow: 2px 2px 4px white;
 }
 
 body {
   background-color: rgba(0, 198, 255, 0.8);
+}
+.well {
+  border: 3px solid black;
 }
