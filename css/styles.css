@@ -7,6 +7,14 @@ hr {
 h2 {
   font-family: 'Kadwa';
 }
+#img {
+  width: 80%;
+  height: 70%;
+  position: fixed;
+  z-index: -1;
+  left: 450px;
+  top: 400px;
+}
 #startSection {
   display: none;
   text-align: center;
