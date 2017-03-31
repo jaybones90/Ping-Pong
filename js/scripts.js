@@ -13,13 +13,13 @@ var add = function(){
     result = 0;
       if (index % 5 === 0 && index % 3 === 0) {
         result = ""
-        result += "ping-pong"
+        result += "ping-pong" + " " + " " + "<img src='img/pingpong1.png'>"
       } else if (index % 5 === 0) {
         result = ""
-        result += "pong"
+        result += "pong" + "<img src='img/pingpongbluesmall.png'>"
       } else if (index % 3 === 0) {
         result = ""
-        result += "ping"
+        result += "<img src='img/pingpongredsmall.png'>" + " " + "ping" 
       } else  {
         result += index;
       };

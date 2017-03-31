@@ -7,6 +7,10 @@ hr {
 h2 {
   font-family: 'Kadwa';
 }
+h3 {
+  font-family: 'Kadwa';
+  font-size: 12px;
+}
 #img {
   width: 80%;
   height: 70%;
@@ -29,7 +33,7 @@ h2 {
   text-shadow: 1px 1px 4px darkgrey;
   font-size: 20px;
 }
-#rulesAlign {
+.rulesAlign {
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
@@ -38,6 +42,7 @@ h2 {
 #pingPongButtonLabel {
   font-size: 20px;
   font-family: 'Kadwa';
+  margin-right: 20px;
 }
 #introSection {
   text-align: center;
@@ -52,9 +57,11 @@ h2 {
 #pingPongButton {
   text-align: center;
   font-family: 'Sonsie One';
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.2);
   color: white;
+  padding: 10px;
   border-radius: 12px;
+  margin-left: 20px;
 }
 #pingPongButton:hover {
   background-color: white;
@@ -65,11 +72,11 @@ h2 {
   font-family: 'Sonsie One';
   font-size: 30px;
   margin-top: 10px;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.2);
   color: white;
   padding: 10px;
-  box-shadow: 2px 2px 4px white;
   border-radius: 12px;
+  text-shadow: 1px 1px 2px black;
 }
 #startButton:hover {
   background-color: white;
@@ -93,6 +100,8 @@ body {
 }
 .well {
   border: 3px solid black;
+  background-image: image(img/pingpong.png);
+
 }
 
 .red {
