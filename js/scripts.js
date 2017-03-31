@@ -55,7 +55,7 @@ $(document).ready(function(){
       $(this).toggleClass("red")
     });
 
-    $("#startSection").click(function(){
+    $(".rulesAlign").click(function(){
       $(this).toggleClass("white")
     });
 });
