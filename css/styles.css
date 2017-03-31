@@ -1,0 +1,47 @@
+#startSection {
+  display: none;
+  text-align: center;
+}
+#displayAnswerSection {
+  display: none;
+}
+h1 {
+  font-size: 60px;
+}
+hr {
+  width: 400px;
+}
+#pingPongButtonLabel {
+  font-size: 20px;
+  font-family: 'Kadwa';
+}
+#introSection {
+  text-align: center;
+  font-family: 'Sonsie One';
+  margin-top: 150px;
+  color: white;
+  text-shadow: 1px 1px 4px black;
+}
+#startButtonAlign {
+  text-align: center;
+}
+#pingPongButton {
+  text-align: center;
+  font-family: 'Sonsie One';
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+}
+#startButton {
+  text-align: center;
+  font-family: 'Sonsie One';
+  font-size: 30px;
+  margin-top: 100px;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 10px;
+  box-shadow: 2px 2px 4px red;
+}
+
+body {
+  background-color: rgba(0, 198, 255, 0.8);
+}

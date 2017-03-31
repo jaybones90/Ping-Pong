@@ -5,22 +5,39 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.2.0.js"></script>
     <script src="js/scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Arvo:700|Kadwa:700|Raleway|Sonsie+One|Source+Code+Pro:200" rel="stylesheet">
     <meta charset="utf-8">
     <title>Ping Pong</title>
   </head>
   <body>
     <div class="container">
-      <h1>Ping Pong</h1>
+      <div id="introSection">
+        <h1>Ping Pong</h1>
+        <hr>
+      </div>
+      <br></br>
+      <div id="startButtonAlign">
+        <button type="button" id="startButton">Begin!</button>
+      </div>
       <div id="startSection">
         <form id="formOne">
-          <label for="userNumberInput">Enter a number here:</label>
+          <label id="pingPongButtonLabel" for="userNumberInput">Enter a number here:</label>
           <input type="text" name="userNumberInput">
-          <button class="btn btn-success" type="submit" name="submitButton">Ping Pong!</button>
+          <button id="pingPongButton" type="submit" name="submitButton">Ping Pong!</button>
         </form>
       </div>
-      <div>
-        <ul id="displayAnswer">
-        </ul>
+      <br></br>
+      <div id="displayAnswerSection">
+        <div class="row">
+          <div class="col-lg-4"></div>
+          <div class="col-lg-4">
+            <div class="well">
+              <ul id="displayAnswer">
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4"></div>
+        </div>
       </div>
     </div>
   </body>

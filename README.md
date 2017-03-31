@@ -13,9 +13,9 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
   * _Input: 5_
   * _Output: [1,2,3,4,5]_
 
-* _It does nothing when a word is entered_
+* _It alerts when a word is entered instead of a number_
   * _Input: hello_
-  * _Output: []_
+  * _Output: alert("You need to enter a number")_
 
 * _The Program replaces any number that is divisible by 3 with the word "ping"_
   * _Input: 7_

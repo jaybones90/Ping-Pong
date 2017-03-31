@@ -47,7 +47,16 @@ $(document).ready(function(){
 
     add();
   });
-  $("#startSection").hide();
+
+    $("#startButton").click(function(){
+      $("#startSection").fadeToggle(1000);
+      $("#startButton").toggle();
+    });
+
+    $("#pingPongButton").click(function(){
+      $("#displayAnswerSection").show();
+    });
+
 
 
 
