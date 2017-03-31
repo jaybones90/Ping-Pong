@@ -1,11 +1,9 @@
 // These are my globally defined variables
 var userNumber, result
 
-
 var display = function (){
   $("#displayAnswer").append("<li>" + result + "</li>");
 };
-
 
 // This is the back-end code that does the arithmatic
 var add = function(){
@@ -19,14 +17,13 @@ var add = function(){
         result += "pong" + "<img src='img/pingpongbluesmall.png'>"
       } else if (index % 3 === 0) {
         result = ""
-        result += "<img src='img/pingpongredsmall.png'>" + " " + "ping" 
+        result += "<img src='img/pingpongredsmall.png'>" + " " + "ping"
       } else  {
         result += index;
       };
       display();
     };
 };
-
 
 // This is the front-end code that interacts with the user//
 $(document).ready(function(){
@@ -54,9 +51,7 @@ $(document).ready(function(){
       $(this).toggleClass("bounceOutAnimation");
     });
 
-
     $("#h1shake").click(function(){
       $(this).toggleClass("red")
     });
-
 });
