@@ -34,15 +34,19 @@ $(document).ready(function(){
     event.preventDefault();
 
     userNumber = parseInt($("input").val());
+
     if (isNaN(userNumber)){
       $(this).toggleClass("element-animation")
       $("#noNumber").text("Please Enter A Number!")
+      $("#displayAnswerSection").hide();
+
     } else {
+
       $("#noNumber").empty();
-      $("#displayAnswerSection").fadeToggle(1000);
+      $("#displayAnswerSection").show();
     }
-    $("#displayAnswer").empty();
-    add();
+      $("#displayAnswer").empty();
+      add();
   });
 
     $("#startButton").click(function(){
