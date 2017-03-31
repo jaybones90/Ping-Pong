@@ -28,11 +28,6 @@ var add = function(){
 };
 
 
-
-
-
-
-
 // This is the front-end code that interacts with the user//
 $(document).ready(function(){
   $("#formOne").submit(function(event){
@@ -40,11 +35,12 @@ $(document).ready(function(){
 
     userNumber = parseInt($("input").val());
     if (isNaN(userNumber)){
-      alert("Please Enter A Number!")
-    };
-
+      $(this).toggleClass("element-animation")
+      $("#noNumber").text("Please Enter A Number!")
+    } else {
+      $("#noNumber").empty();
+    }
     $("#displayAnswer").empty();
-
     add();
   });
 
@@ -57,7 +53,8 @@ $(document).ready(function(){
       $("#displayAnswerSection").show();
     });
 
-
-
+    $("#h1shake").click(function(){
+      $(this).toggleClass("element-animation")
+    });
 
 });
