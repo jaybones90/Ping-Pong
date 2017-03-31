@@ -95,6 +95,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   font-family: 'Kadwa';
+  font-size: 20px;
 }
 .well {
   border: 3px solid black;
@@ -102,6 +103,14 @@ body {
 .red {
   color: red;
   transition: 3s;
+}
+.white {
+  color: white;
+  transition: 2s;
+  text-shadow: 1px 1px 2px black;
+  background-color: rgba(76, 76, 76, 0.3);
+  margin-left: 200px;
+  margin-right: 200px;
 }
 .element-animation{
   animation: animationFrames linear 1s;

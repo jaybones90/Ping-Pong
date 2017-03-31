@@ -54,4 +54,8 @@ $(document).ready(function(){
     $("#h1shake").click(function(){
       $(this).toggleClass("red")
     });
+
+    $("#startSection").click(function(){
+      $(this).toggleClass("white")
+    });
 });

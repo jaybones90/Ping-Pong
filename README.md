@@ -13,9 +13,9 @@ _This program will allow a user to input a number and then it will list all the 
   * _Input: 5_
   * _Output: [1,2,3,4,5]_
 
-* _It alerts when a word is entered instead of a number_
+* _It lets the user know when a word is entered instead of a number_
   * _Input: hello_
-  * _Output: alert("You need to enter a number")_
+  * _Output: ("You need to enter a number")_
 
 * _The Program replaces any number that is divisible by 3 with the word "ping"_
   * _Input: 7_
