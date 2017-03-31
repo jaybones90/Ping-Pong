@@ -1,23 +1,32 @@
+// These are my globally defined variables
 var userNumber, result
+
 
 var display = function (){
   $("#displayAnswer").append("<li>" + result + "</li>");
 };
 
-var add = function(){
 
+// This is the back-end code that does the arithmatic
+var add = function(){
   for (var index = 1; index <= userNumber; index++) {
     result = 0;
-
-    if (index % 5 === 0) {
-      result = ""
-      result += "ping"
-
-    }
-    result += index;
-    display();
-  };
+      if (index % 5 === 0 && index % 3 === 0) {
+        result = ""
+        result += "ping-pong"
+      } else if (index % 5 === 0) {
+        result = ""
+        result += "pong"
+      } else if (index % 3 === 0) {
+        result = ""
+        result += "ping"
+      } else  {
+        result += index;
+      };
+      display();
+    };
 };
+
 
 
 
@@ -28,7 +37,18 @@ var add = function(){
 $(document).ready(function(){
   $("#formOne").submit(function(event){
     event.preventDefault();
+
     userNumber = parseInt($("input").val());
+    if (isNaN(userNumber)){
+      alert("Please Enter A Number!")
+    };
+
+    $("#displayAnswer").empty();
+
     add();
   });
+  $("#startSection").hide();
+
+
+
 });
