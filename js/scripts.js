@@ -39,6 +39,7 @@ $(document).ready(function(){
       $("#noNumber").text("Please Enter A Number!")
     } else {
       $("#noNumber").empty();
+      $("#displayAnswerSection").fadeToggle(1000);
     }
     $("#displayAnswer").empty();
     add();
@@ -46,15 +47,12 @@ $(document).ready(function(){
 
     $("#startButton").click(function(){
       $("#startSection").fadeToggle(1000);
-      $("#startButton").toggle();
+      $(this).toggleClass("bounceOutAnimation");
     });
 
-    $("#pingPongButton").click(function(){
-      $("#displayAnswerSection").show();
-    });
 
     $("#h1shake").click(function(){
-      $(this).toggleClass("element-animation")
+      $(this).toggleClass("red")
     });
 
 });
