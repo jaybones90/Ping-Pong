@@ -10,13 +10,10 @@ var add = function(pingPong,pong,ping){
   for (var index = 1; index <= userNumber; index++) {
     result = ""
       if (index % 5 === 0 && index % 3 === 0) {
-        // result = ""
         result += pingPong
       } else if (index % 5 === 0) {
-        // result = ""
         result += pong
       } else if (index % 3 === 0) {
-        // result = ""
         result += ping
       } else  {
         result += index;
