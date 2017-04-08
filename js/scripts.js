@@ -6,18 +6,18 @@ var display = function (){
 };
 
 // This is the back-end code that does the arithmatic
-var add = function(){
+var add = function(pingPong,pong,ping){
   for (var index = 1; index <= userNumber; index++) {
-    result = 0;
+    result = ""
       if (index % 5 === 0 && index % 3 === 0) {
-        result = ""
-        result += "ping-pong" + " " + " " + "<img src='img/pingpong1.png'>"
+        // result = ""
+        result += pingPong
       } else if (index % 5 === 0) {
-        result = ""
-        result += "pong" + "<img src='img/pingpongbluesmall.png'>"
+        // result = ""
+        result += pong
       } else if (index % 3 === 0) {
-        result = ""
-        result += "<img src='img/pingpongredsmall.png'>" + " " + "ping"
+        // result = ""
+        result += ping
       } else  {
         result += index;
       };
@@ -43,7 +43,10 @@ $(document).ready(function(){
       $("#displayAnswerSection").show();
     }
       $("#displayAnswer").empty();
-      add();
+      var pingPong = "ping-pong" + "<img src='img/pingpong1.png'>";
+      var pong = "pong" + "<img src='img/pingpongbluesmall.png'>";
+      var ping = "<img src='img/pingpongredsmall.png'>" + "ping";
+      add(pingPong,pong,ping);
   });
 
     $("#startButton").click(function(){
